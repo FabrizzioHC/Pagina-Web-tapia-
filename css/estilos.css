@@ -10,3 +10,16 @@
     transform: scale(1.1) !important;
     box-shadow: 0 10px 20px rgba(0,0,0,0.4) !important;
 }
+
+/* Seleccionamos la card de Bootstrap */
+#seccion-ofrecemos .card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer; /* Para que el mouse cambie a la manito */
+}
+
+/* Efecto al pasar el mouse */
+#seccion-ofrecemos .card:hover {
+    transform: translateY(-10px) scale(1.03); /* Se eleva un poquito y crece */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3); /* Sombra más profunda para dar relieve */
+    border-color: #5a5a5a; /* Opcional: el borde cambia al rojo de Teddy Fit */
+}
