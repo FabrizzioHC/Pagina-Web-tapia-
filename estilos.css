@@ -7,6 +7,19 @@
 }
 
 .btn.btn-danger:hover {
-    transform: scale(0.7) !important;
+    transform: scale(0.2) !important;
     box-shadow: 0 10px 20px rgba(0,0,0,0.4) !important;
+}
+
+/* Seleccionamos la card de Bootstrap */
+.card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer; /* Para que el mouse cambie a la manito */
+}
+
+/* Efecto al pasar el mouse */
+.card:hover {
+    transform: translateY(-10px) scale(1.03); /* Se eleva un poquito y crece */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3); /* Sombra más profunda para dar relieve */
+    border-color: #b30000; /* Opcional: el borde cambia al rojo de Teddy Fit */
 }
